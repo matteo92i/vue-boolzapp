@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+.colori-messaggi-verde{
+    border: black solid 2px;
+    background-color: green;
+}
 
 .sfondo-chat{
     margin: 0 auto;
@@ -20,7 +24,7 @@
 .colonna-sx{
     width: 70%;
     height: 600px;
-    background-color: blue;
+
     border: black solid 1px;
 }
 header{
@@ -62,12 +66,30 @@ i{
     height: 50px;
     border-radius: 50%;
 }
-.avatar{
+.contatti{
+    width: 100%;
+    height: 60px;
+
+}
+.contatti-1{
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+
+
+
+.contatti-avatar-1{
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    margin-top: 30px;
+
 }
+
+
+
+
+    
 
 
    

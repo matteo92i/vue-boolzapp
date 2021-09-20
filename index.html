@@ -15,17 +15,20 @@
         <main id="app" class="sfondo-chat">
             <div class="colonna-dx">
                 <header></header>
-                <div class="notifiche"></div>
-                <div>
-                    <input type="text" placeholder="cerca o inizia una nuova chat">
+                <div class="notifiche">
+
                 </div>
                 <div>
-                    <div v-for="(contatti) in contacts" >
-                        <div >
-                            <img :src="'img 2/avatar' + contatti.avatar +'.jpg'" class="avatar" alt="">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="cerca o inizia una nuova chat">
+                </div>
+                <div class="contatti">
+                    <div v-for="(contatti) in contacts" class="contatti-1">
+                        <div class="contatti-avatar" >
+                            <img :src="'img 2/avatar' + contatti.avatar +'.jpg'" class="contatti-avatar-1" alt="">
                         </div>
-                        <div>
-                            <h5 class="contatti">{{contatti.name}}</h5>
+                        <div class="contatti-nomi">
+                            <h5 class="contatti-nomi-1">{{contatti.name}}</h5>
                         </div>
                     </div>
                 </div>
@@ -45,7 +48,11 @@
                     </div>
                 </header>
                 <div class="altezza">
-                    <img class="sfondo-chat-1" src="./img 2/mine.jpg" alt="">
+                    <div v-for="messaggi in contacts[0].messages">
+                        {{messaggi.text}}
+                    </div>
+
+
                 </div>
                 <footer>
                     <i class="far fa-smile"></i>
