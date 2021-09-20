@@ -16,12 +16,20 @@
             <div class="colonna-dx">
                 <header></header>
                 <div class="notifiche">
-
+                    <div class="i-notifiche-dim">
+                        <i class="fas fa-bell-slash i-notifiche"></i>
+                    </div>
+                    <div class="notifiche-text">ricevi notifiche di nuovi messaggi</div>
                 </div>
-                <div>
-                    <i class="fas fa-search"></i>
+
+ 
+                <div class="cerca">
+                    <i class="fas fa-search" class="cerca-lente"></i>
                     <input type="text" placeholder="cerca o inizia una nuova chat">
                 </div>
+                    
+
+
                 <div class="contatti">
                     <div v-for="(contatti) in contacts" class="contatti-1">
                         <div class="contatti-avatar" >
@@ -55,9 +63,9 @@
 
                 </div>
                 <footer>
-                    <i class="far fa-smile"></i>
+                    <i class="far fa-smile i-footer"></i>
                     <input type="text" placeholder="scrivi qui">
-                    <i class="fas fa-microphone"></i>
+                    <i class="fas fa-microphone i-footer"></i>
                 </footer>
             </div>
 

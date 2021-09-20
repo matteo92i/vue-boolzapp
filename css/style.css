@@ -30,7 +30,7 @@
 header{
     width: 100%;
     height: 60px;
-    background-color: grey;
+    background-color:#D3D3D3;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -45,19 +45,13 @@ header{
 footer{
     width: 100%;
     height: 60px;
-    background-color: grey;
+    background-color:#D3D3D3;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-input{
-    width: 80%;
-    height: 90%;
-    border-radius: 5%;
-    margin-top: 3px;
-   
-}
-i{
+
+.i-footer{
     font-size: 30px;
     margin: 0 auto;
 }
@@ -66,25 +60,82 @@ i{
     height: 50px;
     border-radius: 50%;
 }
+.notifiche{
+    width: 100%;
+    height: 70px;
+    background-color: #00FFFF;
+    display: flex;
+
+    align-items: center;
+}
+.i-notifiche{
+    font-size: 15px;
+    color: #00FFFF;
+    margin: 13px 13px;
+
+}
+
+.i-notifiche-dim{    
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+.notifiche-text{
+    font-size: 10px;
+
+}
+.cerca{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+.cerca-lente{
+    width: 30%;
+    height: 90%;
+    background-color: #D3D3D3;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+input{
+    width: 100%;
+    height: 90%;
+    border-radius: 5%;
+
+}
+   
+
+    
+    
+
+ 
+    
+    
 .contatti{
     width: 100%;
     height: 60px;
+    margin-top: 15px;
 
 }
 .contatti-1{
     width: 100%;
     height: 60px;
     display: flex;
+    margin-top: 15px;
 }
-
-
-
 .contatti-avatar-1{
     width: 60px;
     height: 60px;
     border-radius: 50%;
 
 }
+
+
+
 
 
 
