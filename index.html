@@ -20,9 +20,12 @@
                     <input type="text" placeholder="cerca o inizia una nuova chat">
                 </div>
                 <div>
-                    <div v-for="(contatti) in contacts">
+                    <div v-for="(contatti) in contacts" >
+                        <div >
+                            <img :src="'img 2/avatar' + contatti.avatar +'.jpg'" class="avatar" alt="">
+                        </div>
                         <div>
-                            <img :src="'img 2/avatar' + contatti.avatar +'.jpg'" alt="">
+                            <h5 class="contatti">{{contatti.name}}</h5>
                         </div>
                     </div>
                 </div>

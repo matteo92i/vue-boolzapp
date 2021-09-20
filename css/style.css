@@ -62,7 +62,12 @@ i{
     height: 50px;
     border-radius: 50%;
 }
- 
+.avatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
 
 
    
