@@ -12,12 +12,35 @@
 <body>
     <div>
 
-        <main class="sfondo-chat">
+        <main id="app" class="sfondo-chat">
             <div class="colonna-dx">
                 <header></header>
+                <div class="notifiche"></div>
+                <div>
+                    <input type="text" placeholder="cerca o inizia una nuova chat">
+                </div>
+                <div>
+                    <div v-for="(contatti) in contacts">
+                        <div>
+                            <img :src="'img 2/avatar' + contatti.avatar +'.jpg'" alt="">
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="colonna-sx">
-                <header></header>
+                <header>
+                    <div>
+                        <img class="dimensione" src="./img 2/avatar_1.jpg" alt="avatar_1">
+
+                    </div>
+                    <div>Michele</div>
+                    <div>
+                        <i class="fas fa-search"></i>
+                        <i class="fas fa-paperclip"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </header>
                 <div class="altezza">
                     <img class="sfondo-chat-1" src="./img 2/mine.jpg" alt="">
                 </div>
