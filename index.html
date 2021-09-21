@@ -25,13 +25,13 @@
  
                 <div class="cerca">
                     <i class="fas fa-search" class="cerca-lente"></i>
-                    <input type="text" placeholder="cerca o inizia una nuova chat">
+                    <input type="text" placeholder="cerca o inizia una nuova chat" class="cerca-chat">
                 </div>
                     
 
 
                 <div class="contatti">
-                    <div v-for="(contatti) in contacts" class="contatti-1">
+                    <div v-for="(contatti, index) in contacts" :class="(index === selezioneIndex) ? 'contatti active' : 'contatti'" @click="selezioneContatto(index)" class="contatti-1">
                         <div class="contatti-avatar" >
                             <img :src="'img 2/avatar' + contatti.avatar +'.jpg'" class="contatti-avatar-1" alt="">
                         </div>
@@ -40,12 +40,13 @@
                         </div>
                     </div>
                 </div>
+                
 
             </div>
             <div class="colonna-sx">
                 <header>
                     <div>
-                        <img class="dimensione" src="./img 2/avatar_1.jpg" alt="avatar_1">
+                        <img class="dimensione" :src="'img 2/avatar' + contacts[selezioneIndex].avatar + '.jpg'" :alt="contacts[selezioneIndex].name">
 
                     </div>
                     <div>Michele</div>
@@ -56,9 +57,11 @@
                     </div>
                 </header>
                 <div class="altezza">
-                    <div v-for="messaggi in contacts[0].messages">
-                        {{messaggi.text}}
-                    </div>
+                    <div class="messaggi">
+                        <div v-for="(messaggi,index) in contacts[selezioneIndex].messages" class="messaggi " :class="messaggi.status">
+                            {{messaggi.text}}
+                        </div>
+
 
 
                 </div>

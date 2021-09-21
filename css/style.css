@@ -3,9 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-.colori-messaggi-verde{
+.messaggi.sent{
     border: black solid 2px;
     background-color: green;
+}
+.messaggi.received{
+    border: black solid 2px;
+    background-color: white;
 }
 
 .sfondo-chat{

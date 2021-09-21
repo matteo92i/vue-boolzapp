@@ -87,7 +87,13 @@ let nome = new Vue ({
                 ],
             },
         ],
+        selezioneIndex: 0,
     },
+    methods:{
+        selezioneContatto: function (index){
+            this.selezioneIndex = index;
+        }
+    }
    
     
         
