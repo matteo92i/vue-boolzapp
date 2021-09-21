@@ -49,22 +49,23 @@
                         <img class="dimensione" :src="'img 2/avatar' + contacts[selezioneIndex].avatar + '.jpg'" :alt="contacts[selezioneIndex].name">
 
                     </div>
-                    <div>Michele</div>
+                    <div>{{contacts[selezioneIndex].name}}</div>
                     <div>
                         <i class="fas fa-search"></i>
                         <i class="fas fa-paperclip"></i>
                         <i class="fas fa-ellipsis-v"></i>
                     </div>
                 </header>
+
                 <div class="altezza">
                     <div class="messaggi">
                         <div v-for="(messaggi,index) in contacts[selezioneIndex].messages" class="messaggi " :class="messaggi.status">
                             {{messaggi.text}}
                         </div>
+                    </div>
 
 
 
-                </div>
                 <footer>
                     <i class="far fa-smile i-footer"></i>
                     <input type="text" placeholder="scrivi qui">

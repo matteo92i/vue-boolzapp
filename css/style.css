@@ -41,6 +41,7 @@ header{
 }
 .altezza{
     height: 480px;
+    background-image: url(../img/mine.jpg);
 }
 .sfondo-chat-1{
     width: 100%;
