@@ -1,6 +1,7 @@
 let nome = new Vue ({
     el: '#app',
     data: {
+        messaggioSent: '',
         contacts: [
             {
                 name: 'Michele',
@@ -92,8 +93,33 @@ let nome = new Vue ({
     methods:{
         selezioneContatto: function (index){
             this.selezioneIndex = index;
+        },
+        inviaMessaggio(){
+            let newMessage = {
+                date: '10/01/ 2020 16:00:00',
+                text: '',
+                status: 'sent',
+            };
+            newMessage.text=this.messaggioSent
+            this.contacts[this.selezioneIndex].messages.push(newMessage)
+        },
+        messaggioRicevuto(){
+            let messageOk = {
+                date:'10/01/2020 16:01:00',
+                text:'ok',
+                status: 'received',
+            };
+            setInterval(function(){
+                this.contacts[this.selezioneIndex].messages.push(messageOk)
+
+            })
         }
-    }
+            
+    
+    },
+
+        
+ 
    
     
         

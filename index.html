@@ -68,7 +68,7 @@
 
                 <footer>
                     <i class="far fa-smile i-footer"></i>
-                    <input type="text" placeholder="scrivi qui">
+                    <input type="text" placeholder="scrivi qui" v-model="messaggioSent" @keyup.enter="inviaMessaggio()">
                     <i class="fas fa-microphone i-footer"></i>
                 </footer>
             </div>
